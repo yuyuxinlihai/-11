@@ -15,6 +15,7 @@ using Single = 秒懂设计模式.单例模式.Single;
 
 #region 创建类型
 #region 单例模式
+
 //单例模式
 //Single single = new Single();
 //single.Show();
