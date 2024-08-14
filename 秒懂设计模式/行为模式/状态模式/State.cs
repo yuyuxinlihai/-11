@@ -6,16 +6,17 @@ using System.Threading.Tasks;
 
 namespace 秒懂设计模式.状态模式
 {
-
-
     public class StateTest
     {
+        public void Show()
+        {
+            Switcher s = new Switcher();
+            s.SwitchOff();
+            s.SwitchOn();
+        }
+
+
     }
-
-    //internal class State
-    //{
-    //}
-
     public class Switcher
     {
         private bool state = false;
@@ -38,14 +39,14 @@ namespace 秒懂设计模式.状态模式
         {
             if ("绿".Equals(state))
             {
-
+                Console.WriteLine("绿灯状态");
             }
         }
         public void SwitchToYellow()
         {
             if ("黄".Equals(state))
             {
-
+                Console.WriteLine("黄色状态");
             }
         }
     }
@@ -67,7 +68,7 @@ namespace 秒懂设计模式.状态模式
 
         public void SwitchToRed(TrafficLight trafficLight)
         {
-            
+
         }
 
         public void SwitchToYellow(TrafficLight trafficLight)
